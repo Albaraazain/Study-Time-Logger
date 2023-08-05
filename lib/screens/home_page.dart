@@ -1,10 +1,9 @@
-import 'dart:async';
+// ignore_for_file: prefer_const_constructors
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:study_logger/habit.dart';
-import '/data.dart';
-import '/timer.dart';
+import 'timer_page.dart';
+import 'stats_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -46,7 +45,7 @@ class _HomePageState extends State<HomePage> {
   Widget getSelectedWidget({required int index}) {
     switch (index) {
       case 0:
-        return const Placeholder();
+        return StatsPage();
       case 2:
         return const Placeholder();
       default:
